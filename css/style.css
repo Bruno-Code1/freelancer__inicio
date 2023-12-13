@@ -1,0 +1,209 @@
+:root {
+    --primario: deepskyblue;
+    --blanco: #ffffff;
+    --negro: #111111;
+    --rojo: rgb(223, 45, 45);
+    --verde: rgb(51, 201, 51);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+}
+
+*::-webkit-scrollbar {
+    height: 5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primario);
+    border-radius: .5rem;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.titulo .texto-azul {
+    color: var(--primario);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+section {
+    padding: 2rem;
+}
+
+body {
+    text-align: center;
+}
+
+.contenedor {
+    width: 120rem;
+}
+
+.navegacion__principal {
+    background-color: var(--negro);
+    color: var(--blanco);
+    width: 100vw;
+    height: 7rem;
+    padding: 2.5rem;
+}
+
+.navegacion__principal a {
+    font-size: 1.4rem;
+    color: var(--blanco);
+    font-weight: 400;
+    margin-right: 5rem;
+}
+
+nav a:hover {
+    color: var(--primario);
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#hero {
+    background: url('../image/hero.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 60rem;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    top: 9rem; right: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#hero .contenido-hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#hero .contenido-hero p {
+    margin: 3rem 0;
+    color: var(--negro);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+main {
+    width: 100vw;
+    height: 40rem;
+    padding-top: 4rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main section h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+main section p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--negro);
+    flex-wrap: wrap;
+}
+
+main div {
+    background-color: var(--primario);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--negro);
+}
+
+
+
+
+
+/*=========MEDIA QUERIES=========*/
+
+@media (max-width: 1400px) {
+    
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }    
+    .navegacion__principal {
+        height: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transition: .3s ease top;
+        gap: 4rem;
+        transform: scale(0);
+    }
+    .navegacion__principal a {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    main  {
+        flex-wrap: wrap;
+    }       
+}
+@media (max-width: 450px) {
+    
+}
